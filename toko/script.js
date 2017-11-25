@@ -21,6 +21,8 @@ function loadCards() {
             }
         }
         getNextCard();
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        console.log("Error: " + errorThrown.toString());
     })
 }
 
