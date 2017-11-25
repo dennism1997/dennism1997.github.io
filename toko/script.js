@@ -15,7 +15,6 @@ function loadCards() {
             } else {
                 for (var j = 0; j < obj["possibleValues"].length; j++) {
                     var text = obj["text"].replace(/\sX\s/ig, " x ").replace(/\sx\s/ig, " " + obj["possibleValues"][j] + " ");
-                    console.log(text);
                     cards.push(new Card(text))
                 }
             }
