@@ -9,11 +9,11 @@ function loadCards() {
     $.getJSON(url, function (data) {
         for (var i = 0; i < data.length; i++) {
             var obj = JSON.parse(data[i]);
-            if(obj["possibleValues"].length === 0) {
+            if (obj["possibleValues"].length === 0) {
                 cards.push(new Card(obj["text"]));
                 console.log(obj["text"])
             } else {
-                for(var j = 0; j < obj["possibleValues"].length ; j++) {
+                for (var j = 0; j < obj["possibleValues"].length; j++) {
                     var text = obj["text"].replace(/\sX\s/ig, " x ").replace(/\sx\s/ig, " " + obj["possibleValues"][j] + " ");
                     console.log(text);
                     cards.push(new Card(text))
