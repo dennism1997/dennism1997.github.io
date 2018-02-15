@@ -1,3 +1,7 @@
+/*punch: #204F98*/
+/*skc: #2bb673*/
+/*erasmus: #e59126*/
+
 body {
     margin-top: 48px;
     background-color: #dadada;
@@ -9,4 +13,20 @@ body {
 
 .page-section {
     margin-bottom: 20px;
+}
+
+.bg-punch {
+    background-color: #204F98;
+}
+
+.bg-erasmus {
+    background-color: #e59126;
+}
+
+.bg-erasmus-secondary {
+    background: #1d3859;
+}
+
+.bg-skc {
+    background-color: #2bb673;
 }
